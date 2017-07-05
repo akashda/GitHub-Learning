@@ -1,0 +1,485 @@
+<html>
+<head>
+<title>TestNG:  Default test(failed)</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test(failed)</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>7/5/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Mar 03 22:39:13 IST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>4886 seconds (4886331 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.Ftest.TC_142_143_144()'><b>TC_142_143_144</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.Ftest</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 70.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;hmspc101&apos;, ip: &apos;192.168.2.114&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f1191c05-1fe0-45bf-8e83-c43e0c1fa0c9
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:269)
+	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:123)
+	at com.hotelogix.smoke.frontdesk.FrontdeskHome.FrontdeskLandingPage.fn_verifyReservation(FrontdeskLandingPage.java:2746)
+	at com.hotelogix.smoke.FrontdeskTest.Ftest.TC_142_143_144(Ftest.java:2757)
+Caused by: org.openqa.selenium.StaleElementReferenceException: Element not found in the cache - perhaps the page has changed since it was looked up
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;hmspc101&apos;, ip: &apos;192.168.2.114&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.cache.getElementAt(resource://fxdriver/modules/web-element-cache.js:8981)
+	at &lt;anonymous class&gt;.Utils.getElementAt(file:///C:/Users/deepak/AppData/Local/Temp/anonymous8365376196391339522webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:8574)
+	at &lt;anonymous class&gt;.WebElement.getElementAttribute(file:///C:/Users/deepak/AppData/Local/Temp/anonymous8365376196391339522webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11764)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/deepak/AppData/Local/Temp/anonymous8365376196391339522webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12282)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/deepak/AppData/Local/Temp/anonymous8365376196391339522webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:603)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace388623360", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace388623360'><pre>org.openqa.selenium.StaleElementReferenceException: Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 70.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;hmspc101&apos;, ip: &apos;192.168.2.114&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f1191c05-1fe0-45bf-8e83-c43e0c1fa0c9
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:269)
+	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:123)
+	at com.hotelogix.smoke.frontdesk.FrontdeskHome.FrontdeskLandingPage.fn_verifyReservation(FrontdeskLandingPage.java:2746)
+	at com.hotelogix.smoke.FrontdeskTest.Ftest.TC_142_143_144(Ftest.java:2757)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+Caused by: org.openqa.selenium.StaleElementReferenceException: Element not found in the cache - perhaps the page has changed since it was looked up
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;hmspc101&apos;, ip: &apos;192.168.2.114&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.cache.getElementAt(resource://fxdriver/modules/web-element-cache.js:8981)
+	at &lt;anonymous class&gt;.Utils.getElementAt(file:///C:/Users/deepak/AppData/Local/Temp/anonymous8365376196391339522webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:8574)
+	at &lt;anonymous class&gt;.WebElement.getElementAttribute(file:///C:/Users/deepak/AppData/Local/Temp/anonymous8365376196391339522webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11764)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/deepak/AppData/Local/Temp/anonymous8365376196391339522webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12282)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/deepak/AppData/Local/Temp/anonymous8365376196391339522webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:603)
+</pre></div></td>
+<td>332</td>
+<td>com.hotelogix.smoke.FrontdeskTest.Ftest@72b6cbcc</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.Ftest.TC_161()'><b>TC_161</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.Ftest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;View Details&apos;]&quot;}
+Command duration or timeout: 70.12 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;hmspc101&apos;, ip: &apos;192.168.2.114&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5262a535-76c7-4735-89fa-6633ef123dff
+*** Element info: {Using=xpath, value=//a[text()=&apos;View Details&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:455)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.click(Unknown Source)
+	at com.hotelogix.smoke.genericandbase.GenericMethods.clickElement(GenericMethods.java:451)
+	at com.hotelogix.smoke.frontdesk.FrontdeskHome.FrontdeskLandingPage.fn_clickOnViewDetailLink(FrontdeskLandingPage.java:451)
+	at com.hotelogix.smoke.FrontdeskTest.Ftest.TC_161(Ftest.java:3151)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;View Details&apos;]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;hmspc101&apos;, ip: &apos;192.168.2.114&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/deepak/AppData/Local/Temp/anonymous7313089441951514396webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10299)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/deepak/AppData/Local/Temp/anonymous7313089441951514396webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1023423954", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1023423954'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;View Details&apos;]&quot;}
+Command duration or timeout: 70.12 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;hmspc101&apos;, ip: &apos;192.168.2.114&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5262a535-76c7-4735-89fa-6633ef123dff
+*** Element info: {Using=xpath, value=//a[text()=&apos;View Details&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:455)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.click(Unknown Source)
+	at com.hotelogix.smoke.genericandbase.GenericMethods.clickElement(GenericMethods.java:451)
+	at com.hotelogix.smoke.frontdesk.FrontdeskHome.FrontdeskLandingPage.fn_clickOnViewDetailLink(FrontdeskLandingPage.java:451)
+	at com.hotelogix.smoke.FrontdeskTest.Ftest.TC_161(Ftest.java:3151)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;View Details&apos;]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;hmspc101&apos;, ip: &apos;192.168.2.114&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/deepak/AppData/Local/Temp/anonymous7313089441951514396webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10299)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/deepak/AppData/Local/Temp/anonymous7313089441951514396webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+</pre></div></td>
+<td>333</td>
+<td>com.hotelogix.smoke.FrontdeskTest.Ftest@72b6cbcc</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.Ftest.TC_48_49_51()'><b>TC_48_49_51</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.Ftest<br/>
+<a href="#Output-1637601612" onClick='toggleBox("Output-1637601612", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1637601612" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1637601612">
+Environment is live<br/>
+</div>
+</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.hotelogix.smoke.FrontdeskTest.Ftest.TC_48_49_51(Ftest.java:773)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1637601612", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1637601612'><pre>java.lang.NullPointerException
+	at com.hotelogix.smoke.FrontdeskTest.Ftest.TC_48_49_51(Ftest.java:773)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>767</td>
+<td>com.hotelogix.smoke.FrontdeskTest.Ftest@72b6cbcc</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.Ftest.TC_61_62_63()'><b>TC_61_62_63</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.Ftest</td>
+<td><div><pre>java.lang.AssertionError: expected [200.00] but found [1.00]
+	at com.hotelogix.smoke.frontdesk.ViewDetailsPage.EnableEditingPage.giveDiscount(EnableEditingPage.java:696)
+	at com.hotelogix.smoke.FrontdeskTest.Ftest.TC_61_62_63(Ftest.java:1022)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1991094835", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1991094835'><pre>java.lang.AssertionError: expected [200.00] but found [1.00]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.hotelogix.smoke.frontdesk.ViewDetailsPage.EnableEditingPage.giveDiscount(EnableEditingPage.java:696)
+	at com.hotelogix.smoke.FrontdeskTest.Ftest.TC_61_62_63(Ftest.java:1022)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>281</td>
+<td>com.hotelogix.smoke.FrontdeskTest.Ftest@72b6cbcc</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.Ftest.TC_79()'><b>TC_79</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.Ftest<br/>
+<a href="#Output-456314134" onClick='toggleBox("Output-456314134", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-456314134" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-456314134">
+Order transfer to the:972222<br/>
+Folio Matched<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [-100.0] but found [12.0]
+	at com.hotelogix.smoke.FrontdeskTest.Ftest.TC_79(Ftest.java:1204)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace456314134", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace456314134'><pre>java.lang.AssertionError: expected [-100.0] but found [12.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEquals(Assert.java:260)
+	at org.testng.Assert.assertEquals(Assert.java:273)
+	at com.hotelogix.smoke.FrontdeskTest.Ftest.TC_79(Ftest.java:1204)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>297</td>
+<td>com.hotelogix.smoke.FrontdeskTest.Ftest@72b6cbcc</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.Ftest.TC_120()'><b>TC_120</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.Ftest<br/>
+<a href="#Output-2097989776" onClick='toggleBox("Output-2097989776", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2097989776" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2097989776">
+Guest Detail verified<br/>
+</div>
+</td>
+<td></td>
+<td>242</td>
+<td>com.hotelogix.smoke.FrontdeskTest.Ftest@72b6cbcc</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.Ftest.TC_124_125_126()'><b>TC_124_125_126</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.Ftest<br/>
+<a href="#Output-917704874" onClick='toggleBox("Output-917704874", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-917704874" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-917704874">
+Group reservation checkin and check out verified<br/>
+</div>
+</td>
+<td></td>
+<td>205</td>
+<td>com.hotelogix.smoke.FrontdeskTest.Ftest@72b6cbcc</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.Ftest.TC_136_137_138()'><b>TC_136_137_138</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.Ftest<br/>
+<a href="#Output-973174587" onClick='toggleBox("Output-973174587", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-973174587" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-973174587">
+No show or cancellation of reservation has been done successfully<br/>
+</div>
+</td>
+<td></td>
+<td>214</td>
+<td>com.hotelogix.smoke.FrontdeskTest.Ftest@72b6cbcc</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.Ftest.TC_153_154()'><b>TC_153_154</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.Ftest<br/>
+<a href="#Output-6688524" onClick='toggleBox("Output-6688524", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-6688524" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-6688524">
+DNR applied to the room<br/>
+</div>
+</td>
+<td></td>
+<td>120</td>
+<td>com.hotelogix.smoke.FrontdeskTest.Ftest@72b6cbcc</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.Ftest.TC_40()'><b>TC_40</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.Ftest<br/>
+<a href="#Output-1321115948" onClick='toggleBox("Output-1321115948", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1321115948" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1321115948">
+Single Reervation for 3 nights on Seasionals rate Verified and reservation is Reserved.<br/>
+</div>
+</td>
+<td></td>
+<td>241</td>
+<td>com.hotelogix.smoke.FrontdeskTest.Ftest@72b6cbcc</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.Ftest.TC_42_43_44_45_46_47()'><b>TC_42_43_44_45_46_47</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.Ftest<br/>
+<a href="#Output-988690806" onClick='toggleBox("Output-988690806", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-988690806" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-988690806">
+Order transfer to the:972<br/>
+Folio Matched<br/>
+Reservation made and pos transfer to room and booking total remains unchanged after consolidation<br/>
+</div>
+</td>
+<td></td>
+<td>754</td>
+<td>com.hotelogix.smoke.FrontdeskTest.Ftest@72b6cbcc</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.Ftest.TC_80_81_82_83()'><b>TC_80_81_82_83</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.Ftest<br/>
+<a href="#Output-1006727288" onClick='toggleBox("Output-1006727288", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1006727288" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1006727288">
+Order transfer to the:9722222<br/>
+Folio Matched<br/>
+Consolidate account successfully<br/>
+</div>
+</td>
+<td></td>
+<td>347</td>
+<td>com.hotelogix.smoke.FrontdeskTest.Ftest@72b6cbcc</td></tr>
+</table><p>
+</body>
+</html>

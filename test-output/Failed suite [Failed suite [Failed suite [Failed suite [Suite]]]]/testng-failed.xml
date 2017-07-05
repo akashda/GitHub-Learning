@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [Suite]]]]]">
+  <test name="Test(failed)(failed)(failed)(failed)(failed)">
+    <classes>
+      <class name="com.hotelogix.smoke.FrontdeskTest.FrontdeskTest">
+        <methods>
+          <include name="TC_55_56_57_58_59_60"/>
+          <include name="closeApp"/>
+          <include name="LaunchApp"/>
+          <include name="TC_35_36"/>
+          <include name="TC_40"/>
+          <include name="TC_48_49_51"/>
+          <include name="TC_41"/>
+          <include name="TC_42_43_44_45_46_47"/>
+          <include name="Tc_52_53_54"/>
+          <include name="TC_50"/>
+          <include name="TC_61_62_63"/>
+        </methods>
+      </class> <!-- com.hotelogix.smoke.FrontdeskTest.FrontdeskTest -->
+    </classes>
+  </test> <!-- Test(failed)(failed)(failed)(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [Suite]]]]] -->
